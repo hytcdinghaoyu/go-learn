@@ -41,7 +41,7 @@ func selectSort(sli []int) []int {
 func quickSort(sli []int) []int {
 	length := len(sli)
 
-	if length <= 1{
+	if length <= 1 {
 		return sli
 	}
 
@@ -50,9 +50,9 @@ func quickSort(sli []int) []int {
 	rightSli := []int{}
 
 	for i := 1; i < length; i++ {
-		if sli[i] < base{
+		if sli[i] < base {
 			leftSli = append(leftSli, sli[i])
-		}else {
+		} else {
 			rightSli = append(rightSli, sli[i])
 		}
 	}
